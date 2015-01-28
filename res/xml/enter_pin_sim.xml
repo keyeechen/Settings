@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+        <Preference
+            android:key="enter_pin_sim"
+            android:title="@string/unlock_sim_pin"
+            android:summary="@string/unlock_sim_pin_summary"/>
+
+</PreferenceScreen>

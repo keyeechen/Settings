@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/dual_sim_settings_category">
+
+        <CheckBoxPreference
+            android:key="toggle_sim"
+            android:persistent="false"
+            android:summary="@string/enable_sim_summary"
+            android:disableDependentsState="false" />
+
+        <EditTextPreference android:key="name_sim"
+            android:dialogTitle="@string/change_sim_name"
+            android:dependency="toggle_sim"/>
+
+        <com.android.settings.IconListPreference
+            android:key="icon_sim"
+            android:summary="@string/change_sim_icon_summary"
+            android:dependency="toggle_sim"/>
+
+</PreferenceScreen>
